@@ -53,7 +53,7 @@ const getMetadata = ({product_id}) => {
   const metaQuery = `
   select
   json_build_object(
-    'product_id', ${product_id},
+    'product_id', product_id,
     'ratings', (select json_build_object(
     '2', (select count(rating) from "Reviews" where rating=2 and product_id=${product_id}),
     '3', (select count(rating) from "Reviews" where rating=3 and product_id=${product_id}),
@@ -69,12 +69,21 @@ const getMetadata = ({product_id}) => {
     from "Reviews"
     where product_id=${product_id} limit 1),
     'characteristics', (select json_build_object(
-      'Fit',(select json_build_object('id', id) from "Characteristics" where product_id=${product_id} and name='Fit' limit 1),
-      'Length',(select json_build_object('id', id) from "Characteristics" where product_id=${product_id} and name='Length' limit 1),
-      'Comfort',(select json_build_object('id', id) from "Characteristics" where product_id=${product_id} and name='Comfort' limit 1),
-      'Quality',(select json_build_object('id', id) from "Characteristics" where product_id=${product_id} and name='Quality' limit 1)
-      ) as characteristics
-    from "Characteristics" where product_id=${product_id} limit 1)
+    'Fit',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
+    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
+       where product_id=${product_id} and name='Fit' limit 1),
+    'Length',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
+    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
+       where product_id=${product_id} and name='Length' limit 1),
+    'Comfort',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
+    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
+       where product_id=${product_id} and name='Comfort' limit 1),
+    'Quality',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
+    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
+       where product_id=${product_id} and name='Quality' limit 1)
+    )
+  as characteristics
+  from "Characteristics" where product_id=${product_id} limit 1)
     )
   from "Reviews"
   where product_id=${product_id} limit 1;
