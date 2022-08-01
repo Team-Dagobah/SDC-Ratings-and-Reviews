@@ -1,0 +1,26 @@
+{
+  "name": "sdc-ratings-and-reviews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-dev": "nodemon Ratings_Reviews/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Dagobah/SDC-Ratings-and-Reviews.git"
+  },
+  "author": "Lawsan92",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Dagobah/SDC-Ratings-and-Reviews/issues"
+  },
+  "homepage": "https://github.com/Team-Dagobah/SDC-Ratings-and-Reviews#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "pg": "^8.7.3",
+    "postgres": "^3.2.4"
+  }
+}
