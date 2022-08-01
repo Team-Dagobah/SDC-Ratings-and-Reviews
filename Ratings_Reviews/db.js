@@ -18,25 +18,27 @@ client.connect((error) => {
 // GET reviews
 const getReviews = async (product_id, count) => {
   var reviews;
-  const queryWithPhotos = `select
-  json_agg(
-    json_build_object(
-      'review_id', r.id,
-      'rating', r.rating,
-      'summary', r.summary,
-      'recommend', r.recommend,
-      'response', r.response,
-      'body', r.body,
-      'date', r.date,
-      'reviewer_name',r.reviewer_name,
-      'helpfulness', r.helpfulness,
-	  'photos', photo
-    )
-  ) results
+  const queryWithPhotos = `
+  select
+  json_agg(newtable.results)
+  from
+(select json_build_object(
+    'review_id', r.id,
+    'rating', r.rating,
+    'summary', r.summary,
+    'recommend', r.recommend,
+    'response', r.response,
+    'body', r.body,
+    'date', r.date,
+    'reviewer_name',r.reviewer_name,
+    'helpfulness', r.helpfulness,
+  'photos', photo) results
   from "Reviews" r
   left join (select reviewer_id, json_agg(url) photo from photos ph group by reviewer_id) ph on r.id = ph.reviewer_id
-  where product_id=${product_id}`;
+  where product_id=66642 limit ${count})newtable
 
+  `;
+//  select json_agg(reviewer_name) from ( select reviewer_name from "Reviews" limit 5) r;
   const defaultQuery = `SELECT product_id FROM "Reviews" LIMIT 1`;
 
   if (product_id) {
@@ -94,4 +96,3 @@ const getMetadata = ({product_id}) => {
 
 module.exports = {getReviews, getMetadata};
 
-// EXPLAIN ANALYZE

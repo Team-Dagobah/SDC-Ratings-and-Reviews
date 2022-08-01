@@ -18,12 +18,11 @@ app.get('/reviews', (req, res) =>{
   const count = req.query.count;
   getReviews(product_id, count)
     .then((reviews) => {
-      // console.log('reviews in server.js:', reviews.rows);
       var revData = {
         product: product_id,
         page: null,
-        count: reviews.rows[0].results.length,
-        results: reviews.rows[0].results
+        count: reviews.rows[0].json_agg.length,
+        results: reviews.rows[0].json_agg
       }
       res.status(200).send(revData);
     })
