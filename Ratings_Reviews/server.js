@@ -7,7 +7,6 @@ const app = express();
 app.use(express.json());
 // Internal Modules
 const {getReviews, getMetadata, postReview} = require('./db.js');
-console.log('getReviews():', getReviews());
 // Route Handlers
 app.use(express.static('dist'));
 
