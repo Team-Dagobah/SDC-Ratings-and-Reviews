@@ -6,7 +6,7 @@ const port = 3000;
 const app = express();
 app.use(express.json());
 // Internal Modules
-const {getReviews, getMetadata} = require('./db.js');
+const {getReviews, getMetadata, postReview} = require('./db.js');
 console.log('getReviews():', getReviews());
 // Route Handlers
 app.use(express.static('dist'));
@@ -29,6 +29,13 @@ app.get('/reviews', (req, res) =>{
     .catch((err) => {
       console.log('error:', err);
     });
+});
+
+// POST reviews
+app.post('/reviews', (req, res) => {
+  console.log('req.body:', req.body);
+  postReview(req.body)
+  res.status(200).send('Post received');
 });
 
 // GET metadata
