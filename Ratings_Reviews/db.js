@@ -18,6 +18,7 @@ client.connect((error) => {
 // GET reviews
 const getReviews = async (product_id, count) => {
   var reviews;
+
   const reviewsQueryWithCount = `
   select
   json_agg(newtable.results)
@@ -39,20 +40,49 @@ const getReviews = async (product_id, count) => {
   where product_id=${product_id}limit ${count})newtable
   `;
 
+  const reviewsQuery = `
+  select
+  json_agg(newtable.results)
+  from
+  (select json_build_object(
+    'review_id', r.id,
+    'rating', r.rating,
+    'summary', r.summary,
+    'recommend', r.recommend,
+    'response', r.response,
+    'body', r.body,
+    'date', r.date,
+    'reviewer_name',r.reviewer_name,
+    'helpfulness', r.helpfulness,
+    'photos', photo
+    ) results
+  from "Reviews" r
+  left join (select reviewer_id, json_agg(url) photo from photos ph group by reviewer_id) ph on r.id = ph.reviewer_id
+  where product_id=${product_id})newtable
+  `;
+
 //  select json_agg(reviewer_name) from ( select reviewer_name from "Reviews" limit 5) r;
   const defaultQuery = `SELECT product_id FROM "Reviews" LIMIT 1`;
 
   if (count) {
-    reviews = await client.query(reviewsQueryWithCount);
+    reviews = await client.query(reviewsQueryWithCount)
+                .catch((err) => {throw err});
   } else {
-    reviews = await client.query(defaultQuery);
+    reviews = await client.query(reviewsQuery)
+                .catch((err) => {throw err});
   }
   return reviews;
 };
 
 // POST a reviews
-const postReview = ({review_id, rating, summary, recommend, response, body, date}) => {
+const postReview = ({review_id, rating, summary, recommend, response, body}) => {
   console.log('POST a review!');
+  const date = new Date();
+  const query = `
+  insert into "Reviews" (product_id, rating, summary, recommend, response, body, date)
+  values(${review_id}, ${rating}, ${summary}, ${recommend}, ${response}, ${body}, ${date});
+  `
+  // client.query(query);
 };
 
 // GET metadata

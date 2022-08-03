@@ -15,15 +15,21 @@ app.get('/reviews', (req, res) =>{
   console.log('req.query:', req.query);
   const product_id = req.query.product_id;
   const count = req.query.count;
+  var revData;
   getReviews(product_id, count)
     .then((reviews) => {
-      var revData = {
-        product: product_id,
-        page: null,
-        count: reviews.rows[0].json_agg.length,
-        results: reviews.rows[0].json_agg
+      console.log('reviews', reviews.rows);
+      if (!reviews.rows[0].json_agg) {
+        res.status(200).send({});
+      } else {
+        revData = {
+          product: product_id,
+          page: null,
+          count: reviews.rows[0].json_agg.length,
+          results: reviews.rows[0].json_agg
+        }
+          res.status(200).send(revData);
       }
-      res.status(200).send(revData);
     })
     .catch((err) => {
       console.log('error:', err);
