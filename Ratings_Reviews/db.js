@@ -75,18 +75,32 @@ const getReviews = async (product_id, count) => {
 };
 
 // POST a reviews
-const postReview = ({review_id, rating, summary, recommend, response, body, photos}) => {
-  console.log('POST a review!', review_id, rating, summary, recommend, response, body, photos);
-  const date = new Date();
+const postReview = ({product_id, rating, summary, recommend, reported, response, body, photos, reviewer_name, reviewer_email, helpfulness, characteristics}) => {
+  if (recommend === 'true') {
+    recommend = true;
+  } else {
+    recommend = false;
+  }
+  if (reported === 'true') {
+    reported = true;
+  } else {
+    reported = false;
+  }
+  const date = Date.now().toString();
   const queryReviews = `
-  insert into "Reviews" (product_id, rating, summary, recommend, response, body, date)
-  values(${review_id}, ${rating}, ${summary}, ${recommend}, ${response}, ${body}, ${date});
+  insert into "Reviews" (id, product_id, rating, summary, recommend, reported, response, body, date, reviewer_name, reviewer_email, helpfulness)
+  values(DEFAULT, ${Number(product_id)}, ${Number(rating)}, '${summary}', ${recommend}, ${reported}, '${response}', '${body}', ${date}, '${reviewer_name}', '${reviewer_email}', ${Number(helpfulness)});
   `;
 
-  // const QueryPhotos;
+  client.query(queryReviews)
+    .catch((err) => {throw err});
 
-  // const queryChar;
-  // client.query(query);
+  photos.forEach((photo) => {
+    client.query(`insert into photos(id, reviewer_id, url) values (DEFAULT, ${Number(product_id)}, '${photo}')`)
+      .catch((err) => {throw err;})
+  });
+
+
 };
 
 // GET metadata

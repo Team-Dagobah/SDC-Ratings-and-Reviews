@@ -38,7 +38,7 @@ app.get('/reviews', (req, res) =>{
 
 // POST reviews
 app.post('/reviews', (req, res) => {
-  console.log('req.body:', req.body);
+  // console.log('req.body:', req.body);
   postReview(req.body)
   res.status(200).send('Post received');
 });
@@ -58,3 +58,4 @@ app.get('/reviews/meta', (req, res) => {
 app.listen(port, () => {
   console.log(`Reviews_Database, local host: ${port} running...`);
 });
+
