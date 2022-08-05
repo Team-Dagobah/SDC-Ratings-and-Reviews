@@ -76,6 +76,7 @@ const getReviews = async (product_id, count) => {
 
 // POST a reviews
 const postReview = ({product_id, rating, summary, recommend, reported, response, body, photos, reviewer_name, reviewer_email, helpfulness, characteristics}) => {
+  // convert strings to bools
   if (recommend === 'true') {
     recommend = true;
   } else {
@@ -92,15 +93,25 @@ const postReview = ({product_id, rating, summary, recommend, reported, response,
   values(DEFAULT, ${Number(product_id)}, ${Number(rating)}, '${summary}', ${recommend}, ${reported}, '${response}', '${body}', ${date}, '${reviewer_name}', '${reviewer_email}', ${Number(helpfulness)});
   `;
 
+  // "Reviews" table
   client.query(queryReviews)
     .catch((err) => {throw err});
 
+  // photos table
   photos.forEach((photo) => {
     client.query(`insert into photos(id, reviewer_id, url) values (DEFAULT, ${Number(product_id)}, '${photo}')`)
       .catch((err) => {throw err;})
   });
 
+  // "Characteristics" table
 
+};
+
+// PUT helpful
+const helpVote = ({product_id, helpfulness, reviewer_name}) => {
+const query = `update "Reviews" set helpfulness = helpfulness + ${helpfulness} where product_id =${product_id} and reviewer_name='${reviewer_name}'`;
+  client.query(query)
+    .catch((err) => {console.log('PUT helpfulness error:', err)});
 };
 
 // GET metadata
@@ -148,5 +159,5 @@ const getMetadata = ({product_id}) => {
   return characteristics;
 }
 
-module.exports = {getReviews, getMetadata, postReview};
+module.exports = {getReviews, getMetadata, postReview, helpVote};
 
