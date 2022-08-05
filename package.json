@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Team-Dagobah/SDC-Ratings-and-Reviews#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "newrelic": "^9.0.0",
     "nodemon": "^2.0.19",
     "pg": "^8.7.3",
     "postgres": "^3.2.4"

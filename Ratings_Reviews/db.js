@@ -75,13 +75,17 @@ const getReviews = async (product_id, count) => {
 };
 
 // POST a reviews
-const postReview = ({review_id, rating, summary, recommend, response, body}) => {
-  console.log('POST a review!');
+const postReview = ({review_id, rating, summary, recommend, response, body, photos}) => {
+  console.log('POST a review!', review_id, rating, summary, recommend, response, body, photos);
   const date = new Date();
-  const query = `
+  const queryReviews = `
   insert into "Reviews" (product_id, rating, summary, recommend, response, body, date)
   values(${review_id}, ${rating}, ${summary}, ${recommend}, ${response}, ${body}, ${date});
-  `
+  `;
+
+  // const QueryPhotos;
+
+  // const queryChar;
   // client.query(query);
 };
 

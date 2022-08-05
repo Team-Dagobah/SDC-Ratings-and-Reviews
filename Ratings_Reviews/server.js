@@ -1,7 +1,7 @@
 // External modules
+require('newrelic');
 const express = require('express');
 const port = 3000;
-
 // Instance modules
 const app = express();
 app.use(express.json());
