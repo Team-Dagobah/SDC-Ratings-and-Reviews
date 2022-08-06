@@ -104,7 +104,42 @@ const postReview = ({product_id, rating, summary, recommend, reported, response,
   });
 
   // "Characteristics" table
+  const characteristicsFitQuery = `insert into "Characteristics" (id, product_id, name) values(DEFAULT, ${product_id}, '${characteristics.Fit}') `;
+  client.query(characteristicsFitQuery)
+    .catch((err) => {throw err;});
 
+  const characteristicsLengthQuery = `insert into "Characteristics" (id, product_id, name) values(DEFAULT, ${product_id}, '${characteristics.Length}') `;
+  client.query(characteristicsLengthQuery)
+    .catch((err) => {throw err;});
+
+  const characteristicsComfortQuery = `insert into "Characteristics" (id, product_id, name)     values(DEFAULT, ${product_id}, '${characteristics.Comfort}')`;
+  client.query(characteristicsComfortQuery)
+    .catch((err) => {throw err;});
+
+ const characteristicsQualityQuery = `insert into "Characteristics" (id, product_id, name)     values(DEFAULT, ${product_id}, '${characteristics.Quality}')`;
+  client.query(characteristicsQualityQuery)
+    .catch((err) => {throw err;});
+
+  // characteristics_reviews table
+  const characteristics_reviewsFitQuery = `insert into characteristics_reviews (id, characteristic_id, review_id, value) values (Default, ${product_id}, ${characteristics.Fit.id}, ${characteristics.Fit.value})`;
+
+  client.query(characteristics_reviewsFitQuery)
+    .catch((err) => {throw err;});
+
+  const characteristics_reviewsLengthQuery = `insert into characteristics_reviews (id, characteristic_id, review_id, value) values (Default, ${product_id}, ${characteristics.Length.id}, ${characteristics.Length.value})`;
+
+  client.query(characteristics_reviewsLengthQuery)
+    .catch((err) => {throw err;});
+
+  const characteristics_reviewsComfortQuery = `insert into characteristics_reviews (id, characteristic_id, review_id, value) values (Default, ${product_id}, ${characteristics.Comfort.id}, ${characteristics.Comfort.value})`;
+
+  client.query(characteristics_reviewsComfortQuery)
+    .catch((err) => {throw err;});
+
+  const characteristics_reviewsQualityQuery = `insert into characteristics_reviews (id, characteristic_id, review_id, value) values (Default, ${product_id}, ${characteristics.Quality.id}, ${characteristics.Quality.value})`;
+
+  client.query(characteristics_reviewsQualityQuery)
+    .catch((err) => {throw err;});
 };
 
 // PUT helpful
@@ -137,16 +172,16 @@ const getMetadata = ({product_id}) => {
     where product_id=${product_id} limit 1),
     'characteristics', (select json_build_object(
     'Fit',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
-    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
+    left join (select characteristic_id, avg(value) average from characteristics_reviewss cv group by characteristic_id) cv on c.id = cv.characteristic_id
        where product_id=${product_id} and name='Fit' limit 1),
     'Length',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
-    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
+    left join (select characteristic_id, avg(value) average from characteristics_reviewss cv group by characteristic_id) cv on c.id = cv.characteristic_id
        where product_id=${product_id} and name='Length' limit 1),
     'Comfort',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
-    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
+    left join (select characteristic_id, avg(value) average from characteristics_reviewss cv group by characteristic_id) cv on c.id = cv.characteristic_id
        where product_id=${product_id} and name='Comfort' limit 1),
     'Quality',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
-    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
+    left join (select characteristic_id, avg(value) average from characteristics_reviewss cv group by characteristic_id) cv on c.id = cv.characteristic_id
        where product_id=${product_id} and name='Quality' limit 1)
     )
   as characteristics
