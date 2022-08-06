@@ -62,7 +62,7 @@ const getReviews = async (product_id, count) => {
   `;
 
 //  select json_agg(reviewer_name) from ( select reviewer_name from "Reviews" limit 5) r;
-  const defaultQuery = `SELECT product_id FROM "Reviews" LIMIT 1`;
+  const defaultQuery = `SELECT * FROM "Reviews" where produc_id=${product_id}`;
 
   if (count) {
     reviews = await client.query(reviewsQueryWithCount)
@@ -179,16 +179,16 @@ const getMetadata = ({product_id}) => {
     where product_id=${product_id} limit 1),
     'characteristics', (select json_build_object(
     'Fit',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
-    left join (select characteristic_id, avg(value) average from characteristics_reviewss cv group by characteristic_id) cv on c.id = cv.characteristic_id
+    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
        where product_id=${product_id} and name='Fit' limit 1),
     'Length',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
-    left join (select characteristic_id, avg(value) average from characteristics_reviewss cv group by characteristic_id) cv on c.id = cv.characteristic_id
+    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
        where product_id=${product_id} and name='Length' limit 1),
     'Comfort',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
-    left join (select characteristic_id, avg(value) average from characteristics_reviewss cv group by characteristic_id) cv on c.id = cv.characteristic_id
+    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
        where product_id=${product_id} and name='Comfort' limit 1),
     'Quality',(select json_build_object('id', c.id, 'value', average) from "Characteristics" c
-    left join (select characteristic_id, avg(value) average from characteristics_reviewss cv group by characteristic_id) cv on c.id = cv.characteristic_id
+    left join (select characteristic_id, avg(value) average from characteristics_reviews cv group by characteristic_id) cv on c.id = cv.characteristic_id
        where product_id=${product_id} and name='Quality' limit 1)
     )
   as characteristics
@@ -197,7 +197,8 @@ const getMetadata = ({product_id}) => {
   from "Reviews"
   where product_id=${product_id} limit 1;
   `;
-  var characteristics = client.query(metaQuery);
+  var characteristics = client.query(metaQuery)
+                          .catch((err) => {console.log('reviews/meta error:', err)});
   return characteristics;
 }
 

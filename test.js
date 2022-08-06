@@ -4,18 +4,14 @@ import {Counter} from 'k6/metrics';
 
 export const requests = new Counter('http_reqs');
 
-const end = Math.ceil(5774952);
+const end = Math.ceil(6000000);
 const pivot = Math.floor(2000000);
 const product_id = Math.floor(Math.random() * (end - pivot) + pivot);
 const url = `http://localhost:3000/reviews/meta/?product_id=${product_id}`;
 
 export const options = {
   stages: [
-    {duration: '10s', target: 10},
-    {duration: '10s', target: 20},
-    {duration: '10s', target: 40},
-    {duration: '10s', target: 80},
-    {duration: '10s', target: 160}
+    {duration: '10s', target: 1000},
   ]
 }
 

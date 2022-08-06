@@ -2,6 +2,7 @@
 require('newrelic');
 const express = require('express');
 const port = 3000;
+const path = require('path');
 // Instance modules
 const app = express();
 app.use(express.json());
@@ -11,8 +12,8 @@ const {getReviews, getMetadata, postReview, helpVote, reviewResponse} = require(
 app.use(express.static('dist'));
 
 // Loader.io endpoint
-app.get('/loaderio-1cb73c67223617e9b7fe6d28ad3b77db.txt', (req, res) => {
-  res.send('loaderio-1cb73c67223617e9b7fe6d28ad3b77');
+app.get('/loaderio-9d595e86394bec21ab7d0b6965cffa38', (req, res) => {
+  res.send('loaderio-9d595e86394bec21ab7d0b6965cffa38');
 });
 
 // GET reviews
@@ -25,7 +26,7 @@ app.get('/reviews', (req, res) =>{
     .then((reviews) => {
       console.log('reviews', reviews.rows);
       if (!reviews.rows[0].json_agg) {
-        res.status(200).send({});
+        res.status(200).send({});``
       } else {
         revData = {
           product: product_id,
