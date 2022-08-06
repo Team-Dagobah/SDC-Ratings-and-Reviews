@@ -144,10 +144,17 @@ const postReview = ({product_id, rating, summary, recommend, reported, response,
 
 // PUT helpful
 const helpVote = ({product_id, helpfulness, reviewer_name}) => {
-const query = `update "Reviews" set helpfulness = helpfulness + ${helpfulness} where product_id =${product_id} and reviewer_name='${reviewer_name}'`;
+const query = `update "Reviews" set helpfulness = helpfulness + ${helpfulness} where product_id =${product_id}'`;
   client.query(query)
     .catch((err) => {console.log('PUT helpfulness error:', err)});
 };
+
+// PUT repsonse
+const reviewResponse = ({product_id, response}) => {
+  console.log('product_id, response:', product_id, response)
+  client.query(`update "Reviews" set response ='${response}' where product_id=${product_id}`)
+    .catch((err) => {console.log('PUT helpfulness error:', err)});
+}
 
 // GET metadata
 const getMetadata = ({product_id}) => {
@@ -194,5 +201,5 @@ const getMetadata = ({product_id}) => {
   return characteristics;
 }
 
-module.exports = {getReviews, getMetadata, postReview, helpVote};
+module.exports = {getReviews, getMetadata, postReview, helpVote, reviewResponse};
 

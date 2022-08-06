@@ -6,7 +6,7 @@ const port = 3000;
 const app = express();
 app.use(express.json());
 // Internal Modules
-const {getReviews, getMetadata, postReview, helpVote} = require('./db.js');
+const {getReviews, getMetadata, postReview, helpVote, reviewResponse} = require('./db.js');
 // Route Handlers
 app.use(express.static('dist'));
 
@@ -44,10 +44,17 @@ app.post('/reviews', (req, res) => {
 });
 
 // PUT helpfulness
-app.put('/reviews', (req, res) => {
+app.put('/reviews/helpfulness', (req, res) => {
   console.log('req.body:', req.body);
   helpVote(req.body);
   res.status(200).send('Helpful vote added !')
+});
+
+// PUT response
+app.put('/reviews/response', (req, res) => {
+  console.log('req.body:', req.body);
+  reviewResponse(req.body);
+  res.status(200).send('response added !')
 });
 
 // GET metadata

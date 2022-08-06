@@ -1444,3 +1444,228 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":38995,"time":"2022-08-06T00:04:45.179Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
 {"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":38995,"time":"2022-08-06T00:04:45.182Z","msg":"Agent state changed from connected to started."}
 {"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":38995,"time":"2022-08-06T00:04:46.183Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39390,"time":"2022-08-06T00:11:27.434Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39390,"time":"2022-08-06T00:11:27.490Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39390,"time":"2022-08-06T00:11:27.509Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39390,"time":"2022-08-06T00:11:27.512Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39390,"time":"2022-08-06T00:11:27.512Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39390,"time":"2022-08-06T00:11:29.329Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39390,"time":"2022-08-06T00:11:29.329Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BdxhxKfik6G9ADZ9QTuqMjdi7bIMAAgBAAAnIQEAAJneAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39390,"time":"2022-08-06T00:11:29.329Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39390,"time":"2022-08-06T00:11:29.330Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39390,"time":"2022-08-06T00:11:29.332Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39390,"time":"2022-08-06T00:11:30.334Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39435,"time":"2022-08-06T00:11:45.867Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39435,"time":"2022-08-06T00:11:45.925Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39435,"time":"2022-08-06T00:11:45.945Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39435,"time":"2022-08-06T00:11:45.948Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39435,"time":"2022-08-06T00:11:45.948Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39435,"time":"2022-08-06T00:11:47.579Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39435,"time":"2022-08-06T00:11:47.579Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BW6OeByVYJXIADZ9QTuqMjdi7bIMAAgBAAAnIQEAAJoLAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39435,"time":"2022-08-06T00:11:47.579Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39435,"time":"2022-08-06T00:11:47.580Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39435,"time":"2022-08-06T00:11:47.582Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39435,"time":"2022-08-06T00:11:48.583Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39479,"time":"2022-08-06T00:12:13.618Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39479,"time":"2022-08-06T00:12:13.672Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39479,"time":"2022-08-06T00:12:13.691Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39479,"time":"2022-08-06T00:12:13.694Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39479,"time":"2022-08-06T00:12:13.694Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39479,"time":"2022-08-06T00:12:15.408Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39479,"time":"2022-08-06T00:12:15.408Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID Bfma5b_mVj9SADZ9QTuqMjdi7bJIAAgBAAAnIQEAAJo3AgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39479,"time":"2022-08-06T00:12:15.409Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39479,"time":"2022-08-06T00:12:15.409Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39479,"time":"2022-08-06T00:12:15.412Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39479,"time":"2022-08-06T00:12:16.415Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39626,"time":"2022-08-06T00:15:12.765Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39626,"time":"2022-08-06T00:15:12.866Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39626,"time":"2022-08-06T00:15:12.909Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39626,"time":"2022-08-06T00:15:12.916Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39626,"time":"2022-08-06T00:15:12.916Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39653,"time":"2022-08-06T00:15:14.605Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39653,"time":"2022-08-06T00:15:14.660Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39653,"time":"2022-08-06T00:15:14.679Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39653,"time":"2022-08-06T00:15:14.682Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39653,"time":"2022-08-06T00:15:14.682Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39653,"time":"2022-08-06T00:15:15.482Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39653,"time":"2022-08-06T00:15:15.482Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BT3wvKenrgPsADZ9QTuqMjdi7bL8AAgBAAAnIQEAAJrlAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39653,"time":"2022-08-06T00:15:15.482Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39653,"time":"2022-08-06T00:15:15.483Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39653,"time":"2022-08-06T00:15:15.488Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39653,"time":"2022-08-06T00:15:16.489Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39694,"time":"2022-08-06T00:15:34.890Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39694,"time":"2022-08-06T00:15:34.947Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39694,"time":"2022-08-06T00:15:34.968Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39694,"time":"2022-08-06T00:15:34.971Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39694,"time":"2022-08-06T00:15:34.971Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39694,"time":"2022-08-06T00:15:36.595Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39694,"time":"2022-08-06T00:15:36.595Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BR2OMmfCqlrUADZ9QTuqMjdi7bL8AAgBAAAnIQEAAJsOAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39694,"time":"2022-08-06T00:15:36.595Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39694,"time":"2022-08-06T00:15:36.596Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39694,"time":"2022-08-06T00:15:36.599Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39694,"time":"2022-08-06T00:15:37.600Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39736,"time":"2022-08-06T00:15:58.806Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39736,"time":"2022-08-06T00:15:58.864Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39736,"time":"2022-08-06T00:15:58.884Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39736,"time":"2022-08-06T00:15:58.887Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39736,"time":"2022-08-06T00:15:58.887Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39736,"time":"2022-08-06T00:16:00.431Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39736,"time":"2022-08-06T00:16:00.431Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BRA760ScPAF2ADZ9QTuqMjdi7bM4AAgBAAAnIQEAAJs4AgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39736,"time":"2022-08-06T00:16:00.431Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39736,"time":"2022-08-06T00:16:00.432Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39736,"time":"2022-08-06T00:16:00.434Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39736,"time":"2022-08-06T00:16:01.436Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39810,"time":"2022-08-06T00:17:03.994Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39810,"time":"2022-08-06T00:17:04.053Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39810,"time":"2022-08-06T00:17:04.074Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39810,"time":"2022-08-06T00:17:04.077Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39810,"time":"2022-08-06T00:17:04.077Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39810,"time":"2022-08-06T00:17:05.771Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39810,"time":"2022-08-06T00:17:05.771Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID Bd3lUJaJlta7ADZ9QTuqMjdi7bN0AAgBAAAnIQEAAJuCAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39810,"time":"2022-08-06T00:17:05.771Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39810,"time":"2022-08-06T00:17:05.772Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39810,"time":"2022-08-06T00:17:05.775Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39810,"time":"2022-08-06T00:17:06.776Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39843,"time":"2022-08-06T00:17:13.522Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39843,"time":"2022-08-06T00:17:13.655Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39843,"time":"2022-08-06T00:17:13.706Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39843,"time":"2022-08-06T00:17:13.719Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39843,"time":"2022-08-06T00:17:13.719Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39843,"time":"2022-08-06T00:17:15.408Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39843,"time":"2022-08-06T00:17:15.408Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BS9BWjbyo5iSADZ9QTuqMjdi7bN0AAgBAAAnIQEAAJujAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39843,"time":"2022-08-06T00:17:15.408Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39843,"time":"2022-08-06T00:17:15.409Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39843,"time":"2022-08-06T00:17:15.411Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39843,"time":"2022-08-06T00:17:16.411Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39937,"time":"2022-08-06T00:18:50.144Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39937,"time":"2022-08-06T00:18:50.200Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39937,"time":"2022-08-06T00:18:50.220Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39937,"time":"2022-08-06T00:18:50.223Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39937,"time":"2022-08-06T00:18:50.223Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39937,"time":"2022-08-06T00:18:52.114Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39937,"time":"2022-08-06T00:18:52.114Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BeEdoBnEV_twADZ9QTuqMjdi7bOwAAgBAAAnIQEAAJwBAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39937,"time":"2022-08-06T00:18:52.114Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39937,"time":"2022-08-06T00:18:52.115Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39937,"time":"2022-08-06T00:18:52.117Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":39937,"time":"2022-08-06T00:18:53.119Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40046,"time":"2022-08-06T00:20:48.225Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40046,"time":"2022-08-06T00:20:48.284Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40046,"time":"2022-08-06T00:20:48.304Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40046,"time":"2022-08-06T00:20:48.307Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40046,"time":"2022-08-06T00:20:48.307Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40046,"time":"2022-08-06T00:20:49.077Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40046,"time":"2022-08-06T00:20:49.077Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BcLplX6Z7UavADZ9QTuqMjdi7bQoAAgBAAAnIQEAAJxuAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40046,"time":"2022-08-06T00:20:49.077Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40046,"time":"2022-08-06T00:20:49.078Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40046,"time":"2022-08-06T00:20:49.081Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40046,"time":"2022-08-06T00:20:50.082Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40127,"time":"2022-08-06T00:21:46.960Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40127,"time":"2022-08-06T00:21:47.019Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40127,"time":"2022-08-06T00:21:47.041Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40127,"time":"2022-08-06T00:21:47.044Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40127,"time":"2022-08-06T00:21:47.044Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40127,"time":"2022-08-06T00:21:48.663Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40127,"time":"2022-08-06T00:21:48.663Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BUNZtiPxC8CdADZ9QTuqMjdi7bRkAAgBAAAnIQEAAJy_AgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40127,"time":"2022-08-06T00:21:48.663Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40127,"time":"2022-08-06T00:21:48.664Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40127,"time":"2022-08-06T00:21:48.666Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40127,"time":"2022-08-06T00:21:49.667Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40228,"time":"2022-08-06T00:23:17.071Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40228,"time":"2022-08-06T00:23:17.133Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40228,"time":"2022-08-06T00:23:17.153Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40228,"time":"2022-08-06T00:23:17.156Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40228,"time":"2022-08-06T00:23:17.156Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40228,"time":"2022-08-06T00:23:19.012Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40228,"time":"2022-08-06T00:23:19.012Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BefcNBa_qJq-ADZ9QTuqMjdi7bTcAAgBAAAnIQEAAJ0kAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40228,"time":"2022-08-06T00:23:19.012Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40228,"time":"2022-08-06T00:23:19.013Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40228,"time":"2022-08-06T00:23:19.015Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40228,"time":"2022-08-06T00:23:20.017Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40264,"time":"2022-08-06T00:23:24.178Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40264,"time":"2022-08-06T00:23:24.276Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40264,"time":"2022-08-06T00:23:24.307Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40264,"time":"2022-08-06T00:23:24.310Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40264,"time":"2022-08-06T00:23:24.310Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40264,"time":"2022-08-06T00:23:26.258Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40264,"time":"2022-08-06T00:23:26.259Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BYs9NbfgJ0b4ADZ9QTuqMjdi7bTcAAgBAAAnIQEAAJ1IAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40264,"time":"2022-08-06T00:23:26.259Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40264,"time":"2022-08-06T00:23:26.260Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40264,"time":"2022-08-06T00:23:26.262Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40264,"time":"2022-08-06T00:23:27.263Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40298,"time":"2022-08-06T00:23:40.394Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40298,"time":"2022-08-06T00:23:40.468Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40298,"time":"2022-08-06T00:23:40.488Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40298,"time":"2022-08-06T00:23:40.492Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40298,"time":"2022-08-06T00:23:40.492Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40298,"time":"2022-08-06T00:23:42.272Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40298,"time":"2022-08-06T00:23:42.272Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BfRfOraUvRlQADZ9QTuqMjdi7bTcAAgBAAAnIQEAAJ1qAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40298,"time":"2022-08-06T00:23:42.272Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40298,"time":"2022-08-06T00:23:42.273Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40298,"time":"2022-08-06T00:23:42.276Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40298,"time":"2022-08-06T00:23:43.277Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40358,"time":"2022-08-06T00:24:22.004Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40358,"time":"2022-08-06T00:24:22.063Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40358,"time":"2022-08-06T00:24:22.084Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40358,"time":"2022-08-06T00:24:22.087Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40358,"time":"2022-08-06T00:24:22.087Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40358,"time":"2022-08-06T00:24:24.639Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40358,"time":"2022-08-06T00:24:24.639Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID Bb0k1Tix39ZIADZ9QTuqMjdi7bUYAAgBAAAnIQEAAJ2mAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40358,"time":"2022-08-06T00:24:24.639Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40358,"time":"2022-08-06T00:24:24.640Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40358,"time":"2022-08-06T00:24:24.642Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40358,"time":"2022-08-06T00:24:25.644Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40455,"time":"2022-08-06T00:25:53.545Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40455,"time":"2022-08-06T00:25:53.610Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40455,"time":"2022-08-06T00:25:53.631Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40455,"time":"2022-08-06T00:25:53.635Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40455,"time":"2022-08-06T00:25:53.635Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40455,"time":"2022-08-06T00:25:54.425Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40455,"time":"2022-08-06T00:25:54.425Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BW0OuLz8e5VgADZ9QTuqMjdi7bVUAAgBAAAnIQEAAJ4HAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40455,"time":"2022-08-06T00:25:54.425Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40455,"time":"2022-08-06T00:25:54.426Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40455,"time":"2022-08-06T00:25:54.429Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40455,"time":"2022-08-06T00:25:55.429Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40522,"time":"2022-08-06T00:26:42.506Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40522,"time":"2022-08-06T00:26:42.568Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40522,"time":"2022-08-06T00:26:42.587Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40522,"time":"2022-08-06T00:26:42.591Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40522,"time":"2022-08-06T00:26:42.591Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40522,"time":"2022-08-06T00:26:44.185Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40522,"time":"2022-08-06T00:26:44.185Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BSAVUWH-WSobADZ9QTuqMjdi7bWQAAgBAAAnIQEAAJ5KAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40522,"time":"2022-08-06T00:26:44.185Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40522,"time":"2022-08-06T00:26:44.186Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40522,"time":"2022-08-06T00:26:44.188Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40522,"time":"2022-08-06T00:26:45.189Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40555,"time":"2022-08-06T00:26:53.500Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40555,"time":"2022-08-06T00:26:53.556Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40555,"time":"2022-08-06T00:26:53.576Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40555,"time":"2022-08-06T00:26:53.579Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40555,"time":"2022-08-06T00:26:53.579Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40555,"time":"2022-08-06T00:26:55.423Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40555,"time":"2022-08-06T00:26:55.423Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BWsc2jST-jWkADZ9QTuqMjdi7bWQAAgBAAAnIQEAAJ5rAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40555,"time":"2022-08-06T00:26:55.423Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40555,"time":"2022-08-06T00:26:55.424Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40555,"time":"2022-08-06T00:26:55.427Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40555,"time":"2022-08-06T00:26:56.427Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40597,"time":"2022-08-06T00:27:07.280Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40597,"time":"2022-08-06T00:27:07.338Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40597,"time":"2022-08-06T00:27:07.360Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40597,"time":"2022-08-06T00:27:07.363Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40597,"time":"2022-08-06T00:27:07.364Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40597,"time":"2022-08-06T00:27:08.980Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40597,"time":"2022-08-06T00:27:08.980Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BVmOHoWcuUlIADZ9QTuqMjdi7bXMAAgBAAAnIQEAAJ6VAgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40597,"time":"2022-08-06T00:27:08.980Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40597,"time":"2022-08-06T00:27:08.981Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40597,"time":"2022-08-06T00:27:08.983Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40597,"time":"2022-08-06T00:27:09.984Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40692,"time":"2022-08-06T00:28:39.330Z","msg":"Using New Relic for Node.js. Agent version: 9.0.0; Node version: v16.14.0."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40692,"time":"2022-08-06T00:28:39.390Z","msg":"Using LegacyContextManager"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40692,"time":"2022-08-06T00:28:39.410Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40692,"time":"2022-08-06T00:28:39.413Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40692,"time":"2022-08-06T00:28:39.413Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40692,"time":"2022-08-06T00:28:41.046Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40692,"time":"2022-08-06T00:28:41.046Z","msg":"Connected to collector-004.newrelic.com:443 with agent run ID BQ6vWmGfSBNpADZ9QTuqMjdi7bYIAAgBAAAnIQEAAJ70AgQ7rqjfAwAFOS4wLjAACGlNYWMubGFuABdTREMgUmF0aW5ncyBhbmQgUmV2aWV3cw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40692,"time":"2022-08-06T00:28:41.046Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/3571009/applications/1001302239","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40692,"time":"2022-08-06T00:28:41.047Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"log_event_data\":833,\"analytic_event_data\":833,\"custom_event_data\":83}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40692,"time":"2022-08-06T00:28:41.050Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"iMac.lan","pid":40692,"time":"2022-08-06T00:28:42.050Z","msg":"Starting initial 1000ms harvest."}
