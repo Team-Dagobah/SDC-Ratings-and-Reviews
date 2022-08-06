@@ -10,6 +10,11 @@ const {getReviews, getMetadata, postReview, helpVote, reviewResponse} = require(
 // Route Handlers
 app.use(express.static('dist'));
 
+// Loader.io endpoint
+app.get('/loaderio-1cb73c67223617e9b7fe6d28ad3b77db.txt', (req, res) => {
+  res.send('loaderio-1cb73c67223617e9b7fe6d28ad3b77');
+});
+
 // GET reviews
 app.get('/reviews', (req, res) =>{
   console.log('req.query:', req.query);
