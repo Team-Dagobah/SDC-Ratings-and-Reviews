@@ -158,7 +158,7 @@ const reviewResponse = ({product_id, response}) => {
 
 // GET metadata
 const getMetadata = ({product_id}) => {
-  console.log('product_id:', product_id);
+  // console.log('product_id:', product_id);
   const metaQuery = `
   select
   json_build_object(

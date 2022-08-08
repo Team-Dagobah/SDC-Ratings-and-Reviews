@@ -7,7 +7,8 @@ const path = require('path');
 const app = express();
 app.use(express.json());
 // Internal Modules
-const {getReviews, getMetadata, postReview, helpVote, reviewResponse} = require('./db.js');
+// const {getReviews, getMetadata, postReview, helpVote, reviewResponse} = require('./db.js');
+const {getReviews, getMetadata, postReview, helpVote, reviewResponse} = require('./pool.js');
 // Route Handlers
 app.use(express.static('dist'));
 
@@ -65,13 +66,17 @@ app.put('/reviews/response', (req, res) => {
 
 // GET metadata
 app.get('/reviews/meta', (req, res) => {
+  // console.log(' getMetadata(req.query):',  getMetadata(req.query))
   getMetadata(req.query)
-    .then((characteristics) => {
-      console.log('GET for /review/meta recieved!:', characteristics.rows);
-      res.status(200).send(characteristics.rows);
+    .then((promise) => {
+      if (promise.characteristics) {
+        return res.status(200).send(promise);
+      } else {
+        return res.status(200).send([]);
+      }
     })
     .catch((err) => {
-      console.log('error:', err);
+      console.log('server.js error:', err);
     });
 });
 

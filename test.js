@@ -11,7 +11,7 @@ const url = `http://localhost:3000/reviews/meta/?product_id=${product_id}`;
 
 export const options = {
   stages: [
-    {duration: '10s', target: 1000},
+    {duration: '60s', target: 100},
   ]
 }
 
@@ -26,3 +26,5 @@ export default function () {
     'transaction time < 2000ms': r => r.timings.duration < 2000,
   });
 }
+
+
